@@ -7,3 +7,94 @@
 html {
   font-size: 62.5%;
 }
+:root {
+  --primary-font: "Lato", sans-serif;
+  --secondary-font: "Ubuntu", sans-serif;
+  --primary-color: #5862e9;
+  --secondary-color: #9868eb;
+  --secondary-color-light: #e1bee7;
+  --text-color-main: #5f6975;
+  --text-color-temp: #adb5bb;
+  --black-color: #000000;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: var(--primary-font);
+  background-color: #faf6ff;
+  padding: 0rem 3rem;
+}
+.header {
+  display: flex;
+}
+.menu {
+  display: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo > img {
+  width: 160px;
+  height: 160px;
+}
+.logo-mobile {
+  display: none;
+}
+.link-pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.link-pages > a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--black-color);
+}
+.link-pages > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.view > a {
+  text-decoration: none;
+  border: 1px solid var(--secondary-color);
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.view > a:hover {
+  background-color: var(--secondary-color-light);
+}
+.menu {
+  background-color: var(--secondary-color-light);
+  border: 2px solid var(--secondary-color-light);
+  padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 50em) {
+  .link-pages > a {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body {
+    padding: 0rem 2rem;
+  }
+}
+
+@media screen and (max-width: 43.125em) {
+  .view > a {
+    display: none;
+  }
+  body {
+    padding: 0rem 1rem;
+  }
+}
