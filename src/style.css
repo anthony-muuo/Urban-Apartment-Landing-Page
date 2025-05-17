@@ -10,14 +10,14 @@ html {
 :root {
   --primary-font: "Lato", sans-serif;
   --secondary-font: "Ubuntu", sans-serif;
-  --primary-color: #5862e9;
-  --secondary-color: #9868eb;
+  --secondary-color: #7e8987;
   --white-color: #ffffff;
   --secondary-color-light: #e1bee7;
   --text-color-main: #5f6975;
   --text-color-temp: #adb5bb;
   --black-color: #000000;
   --color-background: #e07d51;
+  --color-hover: #cb4154;
 }
 
 body {
@@ -25,11 +25,74 @@ body {
   font-family: var(--primary-font);
   background-color: var(--color-background);
 }
+.menu {
+  display: none;
+}
+.apartment {
+  color: var(--color-hover);
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
+}
+
+.nav-pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.link-pages > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0rem 2rem;
+}
+.link-pages > a:hover {
+  color: var(--color-hover);
+  text-decoration: underline;
+  cursor: pointer;
+}
+.view {
+  border: 2px solid var(--white-color);
+  padding: 0.6rem 0.7rem;
+  border-radius: 6rem;
+}
+.view > a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+.view:hover {
+  background-color: var(--secondary-color);
+  border: 2px solid var();
+}
+
+@media screen and (max-width: 56.25em) {
+  .menu {
+    display: block;
+    /* border: 2px solid var(--white-color); */
+    border: none;
+    padding: 0.6rem 0.7rem;
+    border-radius: 1rem;
+    background-color: var(--color-hover);
+    color: white;
+  }
+  .link-pages {
+    display: none;
+  }
+  .view {
+    display: none;
+  }
+}
 
 .hero {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/public/hero_bg1.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/hero_bg1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
