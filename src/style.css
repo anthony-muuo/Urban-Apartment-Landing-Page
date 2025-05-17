@@ -10,91 +10,93 @@ html {
 :root {
   --primary-font: "Lato", sans-serif;
   --secondary-font: "Ubuntu", sans-serif;
-  --primary-color: #5862e9;
-  --secondary-color: #9868eb;
+  --secondary-color: #7e8987;
+  --white-color: #ffffff;
   --secondary-color-light: #e1bee7;
   --text-color-main: #5f6975;
   --text-color-temp: #adb5bb;
   --black-color: #000000;
+  --color-background: #e07d51;
+  --color-hover: #cb4154;
 }
 
 body {
   font-size: 1.8rem;
   font-family: var(--primary-font);
-  background-color: #faf6ff;
-  padding: 0rem 3rem;
-}
-.header {
-  display: flex;
+  background-color: var(--color-background);
 }
 .menu {
   display: none;
+}
+.apartment {
+  color: var(--color-hover);
 }
 nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 2rem 3rem;
 }
-.logo > img {
-  width: 160px;
-  height: 160px;
-}
-.logo-mobile {
-  display: none;
-}
-.link-pages {
+
+.nav-pages {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 .link-pages > a {
   text-decoration: none;
-  text-transform: capitalize;
-  color: var(--black-color);
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0rem 2rem;
 }
 .link-pages > a:hover {
+  color: var(--color-hover);
   text-decoration: underline;
   cursor: pointer;
 }
+.view {
+  border: 2px solid var(--white-color);
+  padding: 0.6rem 0.7rem;
+  border-radius: 6rem;
+}
 .view > a {
   text-decoration: none;
-  border: 1px solid var(--secondary-color);
-  padding: 1rem 2rem;
-  border-radius: 4px;
-  font-weight: 600;
+  color: var(--white-color);
 }
-.view > a:hover {
-  background-color: var(--secondary-color-light);
-}
-.menu {
-  background-color: var(--secondary-color-light);
-  border: 2px solid var(--secondary-color-light);
-  padding: 1rem 2rem;
+.view:hover {
+  background-color: var(--secondary-color);
+  border: 2px solid var();
 }
 
-@media screen and (max-width: 50em) {
-  .link-pages > a {
-    display: none;
-  }
+@media screen and (max-width: 56.25em) {
   .menu {
     display: block;
+    /* border: 2px solid var(--white-color); */
+    border: none;
+    padding: 0.6rem 0.7rem;
+    border-radius: 1rem;
+    background-color: var(--color-hover);
+    color: white;
   }
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .link-pages {
+    display: none;
   }
-  body {
-    padding: 0rem 2rem;
+  .view {
+    display: none;
   }
 }
 
-@media screen and (max-width: 43.125em) {
-  .view > a {
-    display: none;
-  }
-  body {
-    padding: 0rem 1rem;
-  }
+.hero {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/hero_bg1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+h2 {
+  color: var(--white-color);
 }
