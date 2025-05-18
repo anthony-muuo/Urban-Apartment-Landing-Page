@@ -10,6 +10,7 @@ html {
 :root {
   --primary-font: "Lato", sans-serif;
   --secondary-font: "Ubuntu", sans-serif;
+  --font-slogan: "Rock Salt", cursive;
   --secondary-color: #7e8987;
   --white-color: #ffffff;
   --secondary-color-light: #e1bee7;
@@ -96,7 +97,26 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 h2 {
   color: var(--white-color);
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title-name {
+  color: var(--color-background);
+  font-size: 6rem;
+  font-family: var(--secondary-font);
+  font-weight: 600;
+}
+.title-slogan {
+  font-family: var(--font-slogan);
 }
