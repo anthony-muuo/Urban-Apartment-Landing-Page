@@ -393,3 +393,10 @@ textarea::placeholder {
   text-transform: capitalize;
   font-weight: 600;
 }
+footer {
+  padding: 4rem 5rem;
+  background-color: var(--background-color-alt);
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
