@@ -383,7 +383,7 @@ textarea {
   outline: none;
   font-size: 1.6rem;
   resize: none;
-  min-height: 150px;
+  min-height: 15rem;
   transition: all 0.4s;
   width: 100%;
   box-sizing: border-box;
@@ -406,10 +406,10 @@ footer {
 }
 .footer-parent > div {
   flex: 1;
-  min-width: 220px;
+  min-width: 22rem;
 }
 .footer-parent {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .urban {
@@ -443,6 +443,7 @@ footer {
   text-transform: capitalize;
   color: var(--black-color);
   display: block;
+  margin-bottom: 1rem;
 }
 .list-links > a:hover,
 .list-houses > a:hover,
@@ -473,4 +474,18 @@ h3 {
     flex-direction: column;
     gap: 1.5rem;
   }
+}
+.reach-out i {
+  margin-right: 0.5rem;
+  color: var(--primary-color);
+}
+.reach-out {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+  color: var(--black-color);
+  font-size: 1.4rem;
 }
