@@ -315,7 +315,6 @@ form > input {
   padding: 1rem 2rem;
   border: none;
   outline: none;
-  border: 2px solid var(--primary-color);
   font-size: 1.6rem;
   transition: all 0.4s;
 }
@@ -350,7 +349,7 @@ form > input::placeholder {
   text-align: center;
   color: var(--color-grey-dark);
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin-bottom: 1.6rem;
 }
 .newsletter-form {
   display: flex;
@@ -370,11 +369,17 @@ form > input::placeholder {
     flex-direction: column;
     gap: 0.5rem;
   }
+  .newslette-title {
+    font-size: 2rem;
+  }
+  .newsletter-text {
+    font-size: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
 }
 textarea {
   font-family: inherit;
   padding: 1rem 2rem;
-  border: 2px solid var(--primary-color);
   outline: none;
   font-size: 1.6rem;
   resize: none;
@@ -382,6 +387,7 @@ textarea {
   transition: all 0.4s;
   width: 100%;
   box-sizing: border-box;
+  border: none;
 }
 textarea::placeholder {
   text-transform: capitalize;
